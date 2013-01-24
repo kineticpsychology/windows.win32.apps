@@ -1,0 +1,51 @@
+#include "C:\dev\lcc\include\windows.h"
+#include "C:\dev\lcc\include\winver.h"
+#include "resource.h"
+
+IDI_APP          ICON           ".\\main.ico"
+IDI_ABT          ICON           ".\\skull.ico"
+
+
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+IDD_ABOUT DIALOG 0, 0, 200, 80
+STYLE DS_3DLOOK | DS_CENTER | WS_VISIBLE | WS_POPUP
+FONT 8, "Tahoma"
+{
+    LTEXT           "Version: 1.0.0.0", IDC_STATIC, 76, 18, 54, 10, SS_LEFT
+    LTEXT           "Build: 127", IDC_STATIC, 76, 31, 54, 10, SS_LEFT
+    LTEXT           "Release Date: August, 2012", IDC_STATIC, 76, 46, 96, 10, SS_LEFT
+    LTEXT           "Author: Alone", IDC_STATIC, 76, 60, 47, 10, SS_LEFT
+    CONTROL         "", IDC_BTNOK, "STATIC", SS_CENTER | SS_NOTIFY | SS_WHITERECT, 158, 61, 35, 14
+    LTEXT           "OK", IDC_STATIC, 171, 64, 10, 8
+    LTEXT           "File Date/Time Changer", IDC_ABTTITLE, 25, 2, 150, 15, SS_CENTER
+}
+
+1 VERSIONINFO
+    FILEVERSION     1,0,0,0
+    PRODUCTVERSION  1,0,0,0
+    FILEOS          VOS_UNKNOWN
+    FILETYPE        VFT_APP
+    FILESUBTYPE     VFT2_UNKNOWN
+    FILEFLAGSMASK   0x00000000
+    FILEFLAGS       0x00000000
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "040904E4"
+        {
+            VALUE "CompanyName", "Thought Softwares"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "FileDescription", "Application to change the dates/times of any file"
+            VALUE "InternalName", "DateChanger"
+            VALUE "LegalCopyright", "GNU/GPL"
+            VALUE "LegalTrademarks", "Thought Softwares"
+            VALUE "OriginalFilename", "DateChanger.exe"
+            VALUE "ProductName", "File Date Changer"
+            VALUE "ProductVersion", "1.0.0.0"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0409, 0x04E4
+    }
+}
