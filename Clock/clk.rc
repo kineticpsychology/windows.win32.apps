@@ -1,0 +1,59 @@
+#include "C:\dev\lcc\include\winver.h"
+#include "resource.h"
+
+IDI_APP ICON "icon.ico"
+
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+IDD_DLG DIALOG 0, 0, 329, 174
+STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP | WS_SYSMENU
+CAPTION "Clock - Help & About"
+FONT 8, "Tahoma"
+{
+    DEFPUSHBUTTON   "OK", IDOK, 272, 154, 50, 14, BS_FLAT
+    GROUPBOX        " Controls/Hotkeys ", IDC_STATIC, 5, 5, 175, 146
+    LTEXT           "<Ctrl> + <arrow keys>: Move Left/Up/Right/Down", IDC_STATIC, 10, 19, 165, 8
+    LTEXT           "<Ctrl> + <Scroll>: Increase/Decrease opacity", IDC_STATIC, 10, 32, 165, 8
+    LTEXT           "<Ctrl> + <MClick>: Toggle digit masking", IDC_STATIC, 10, 47, 165, 8
+    LTEXT           "<LCtrl> + 1, 2, ..9: Preset digit colors", IDC_STATIC, 10, 61, 165, 8
+    LTEXT           "<RCtrl> + 1, 2, ..9: Preset colon && AM/PM colors", IDC_STATIC, 10, 91, 165, 8
+    LTEXT           "<LCtrl> + 0: Random digit color", IDC_STATIC, 10, 76, 165, 8
+    LTEXT           "<RCtrl> + 0: Random colon && AM/PM colors", IDC_STATIC, 10, 106, 165, 7
+    LTEXT           "<Ctrl> + X or <Alt> + <F4>: Exit the program", IDC_STATIC, 10, 120, 165, 8
+    LTEXT           "<Ctrl> + H: Toggle the '?' help", IDC_STATIC, 10, 135, 165, 9
+    GROUPBOX        " Building Blocks: ", IDC_STATIC, 185, 5, 137, 63
+    LTEXT           "ResEdit (Resource Scripts), PsPad(Coding), lcc-win32 (Compiling), MSDN (APIs), Charles Petzold (Idea/Guideline), UPX.exe (EXE Compression)", IDC_STATIC, 196, 18, 118, 40
+    LTEXT           "Language: C and Win32 API  Platforms: Win NT or above  Version: 1.0.0.0                           Release Date: June, 2012", IDC_STATIC, 196, 84, 104, 36
+    GROUPBOX        " Other Unnecessary Detials ", IDC_STATIC, 185, 69, 137, 82
+    LTEXT           "Author: Alone", IDC_STATIC, 196, 124, 75, 7
+    LTEXT           "p_enigma@rediffmail.com", IDC_STATIC, 196, 133, 87, 8
+}
+
+1 VERSIONINFO
+    FILEVERSION     1,0,0,0
+    PRODUCTVERSION  1,0,0,0
+    FILEOS          VOS_UNKNOWN
+    FILETYPE        VFT_APP
+    FILESUBTYPE     VFT2_UNKNOWN
+    FILEFLAGSMASK   0x00000000
+    FILEFLAGS       0x00000000
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "040904E4"
+        {
+            VALUE "CompanyName", "Thought Softwares"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "FileDescription", "A simple digital clock with limited customizations"
+            VALUE "InternalName", "clk"
+            VALUE "LegalCopyright", "GNU/GPL"
+            VALUE "LegalTrademarks", "Thought Softwares"
+            VALUE "OriginalFilename", "clk.exe"
+            VALUE "ProductName", "Clock"
+            VALUE "ProductVersion", "1.0.0.0"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0409, 0x04E4
+    }
+}
