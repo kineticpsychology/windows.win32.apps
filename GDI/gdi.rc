@@ -1,0 +1,7 @@
+#include "C:\dev\lcc\include\windows.h"
+#include "C:\dev\lcc\include\commctrl.h"
+#include "C:\dev\lcc\include\richedit.h"
+#include "resource.h"
+
+IDI_APP ICON "icon.ico"
+
