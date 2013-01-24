@@ -1,0 +1,52 @@
+#include "C:\dev\lcc\include\winver.h"
+#include "resource.h"
+
+IDI_APP ICON ".\\icon.ico"
+
+
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+IDD_DIALOG DIALOG 0, 0, 297, 122
+STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP | WS_SYSMENU
+CAPTION "Cursor: Help and Information"
+FONT 8, "Tahoma"
+{
+    PUSHBUTTON      "&OK", ID_OK, 242, 103, 50, 14, BS_FLAT
+    LTEXT           "Left-Click: Produces the black color of the mouse pointer.", IDC_STATIC, 12, 20, 181, 9, SS_LEFT
+    LTEXT           "<Shift> + Left-Click: Produces the white color of the mouse pointer.", IDC_STATIC, 12, 34, 209, 9, SS_LEFT
+    LTEXT           "Right-Click: Produces transparent part of the mouse pointer.", IDC_STATIC, 12, 47, 187, 9, SS_LEFT
+    LTEXT           "<Shift> + Right-Click: Produces background screen-inverse part of the mouse pointer.", IDC_STATIC, 12, 60, 269, 9, SS_LEFT
+    LTEXT           "NOTE: The Hot-Spot of the pointer will be the top-left block.", IDC_STATIC, 11, 86, 190, 8, SS_LEFT
+}
+
+1 VERSIONINFO
+    FILEVERSION     1,0,0,0
+    PRODUCTVERSION  1,0,0,0
+    FILEOS          VOS__WINDOWS32
+    FILETYPE        VFT_APP
+    FILESUBTYPE     VFT2_UNKNOWN
+    FILEFLAGSMASK   0x00000000
+    FILEFLAGS       0x00000000
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "04090025"
+        {
+            VALUE "Comments", "Cursor Customizer"
+            VALUE "CompanyName", "Thought Softwares"
+            VALUE "FileDescription", "Cursor Customizer"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "cur"
+            VALUE "LegalCopyright", "GNU/GPL"
+            VALUE "LegalTrademarks", "Thought Softwares"
+            VALUE "OriginalFilename", "cur.exe"
+            VALUE "PrivateBuild", "32"
+            VALUE "ProductName", "Cursor"
+            VALUE "ProductVersion", "1.0.0.0"
+            VALUE "SpecialBuild", "1.32.0.0"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0409, 0x0025
+    }
+}
